@@ -1,8 +1,6 @@
 <div align="center">
-    <a href="https://chronark.com"><h1 align="center">chronark.com</h1></a>
+    <a href="https://vivek.engineer"><h1 align="center">vivek.engineer</h1></a>
     
-My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=chronark.com), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
-
 </div>
 
 <br/>
@@ -12,21 +10,18 @@ My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](h
 
 ## Running Locally
 
-
 ```sh-session
-git clone https://github.com/chronark/chronark.com.git
-cd chronark.com
+git clone https://github.com/vivek-dodia/vercel-static-portfolio
+cd vercel-static-portfolio
 ```
 
-
-Create a `.env` file similar to [`.env.example`](https://github.com/chronark/chronark.com/blob/main/.env.example).
+Create a `.env` and update UPSTASH_REDIS_REST_URL=URL and UPSTASH_REDIS_REST_TOKEN=Token from https://upstash.com/ if you are using the projects sections.
 
 Then install dependencies and run the development server:
 ```sh-session
 pnpm install
 pnpm dev
 ```
-
 
 ## Cloning / Forking
 
