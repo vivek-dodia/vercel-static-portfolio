@@ -3,6 +3,9 @@
 #env
 .env
 
+#projects folder
+app/projects
+
 # dependencies
 /node_modules
 /.pnp
