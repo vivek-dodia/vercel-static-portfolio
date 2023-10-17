@@ -37,10 +37,13 @@ export const metadata: Metadata = {
 			"max-snippet": -1,
 		},
 	},
-	Linkedin: {
-		title: "Chronark",
-		card: "summary_large_image",
-	},
+	/*
+Linkedin: {
+  title: "Chronark",
+  card: "summary_large_image",
+}
+*/
+
 	icons: {
 		shortcut: "/favicon.png",
 	},
