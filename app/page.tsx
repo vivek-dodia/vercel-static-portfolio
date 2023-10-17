@@ -40,7 +40,7 @@ export default function Home() {
 					{" "}
 					<Link
 						target="_blank"
-						href="https://pilotfiber.com"
+						href="https://www.pilotfiber.com/ethernet-transport"
 						className="underline duration-500 hover:text-zinc-300"
 					>
 						Pilot Fiber
