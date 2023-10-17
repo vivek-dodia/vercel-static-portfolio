@@ -16,15 +16,15 @@ const socials = [
 
 	{
 		icon: <Mail size={20} />,
-		href: "mailto:dev@chronark.com",
+		href: "mailto:vivek.dodia@icloud.com",
 		label: "Email",
-		handle: "dev@chronark.com",
+		handle: "vivek.dodia@icloud.com",
 	},
 	{
 		icon: <Github size={20} />,
-		href: "https://github.com/chronark",
+		href: "https://github.com/vivek-dodia",
 		label: "Github",
-		handle: "chronark",
+		handle: "vivek-dodia",
 	},
 ];
 
