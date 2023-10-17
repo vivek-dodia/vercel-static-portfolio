@@ -8,7 +8,7 @@ const socials = [
 	
 {
     icon: <Linkedin size={20} />,
-    href: "https://www.linkedin.com/in/vivekdodia/",
+    href: "https://www.Linkedin.com/in/vivekdodia/",
     label: "Linkedin",
     handle: "@vivekdodia",
 },
