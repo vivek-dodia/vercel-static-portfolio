@@ -14,8 +14,8 @@ Create a `.env` and update UPSTASH_REDIS_REST_URL=URL and UPSTASH_REDIS_REST_TOK
 
 Then install dependencies and run the development server:
 ```sh-session
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 ## Cloning / Forking
