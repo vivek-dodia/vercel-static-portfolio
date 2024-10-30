@@ -10,7 +10,7 @@ const navigation = [
 
 export default function Home() {
 	return (
-		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-pink-200 to-yellow-200">
 			<nav className="my-16 animate-fade-in">
 				<ul className="flex flex-wrap items-center justify-center gap-4">
 					{navigation.map((item) => (
@@ -40,10 +40,10 @@ export default function Home() {
 					{" "}
 					<Link
 						target="_blank"
-						href="https://www.pilotfiber.com/ethernet-transport"
+						href="https://www.resibridge.com/about-us"
 						className="underline duration-500 hover:text-zinc-300"
 					>
-						Pilot Fiber
+						ResiBridge
 					</Link>
 
 					
