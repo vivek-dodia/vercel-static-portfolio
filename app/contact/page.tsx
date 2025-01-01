@@ -27,7 +27,7 @@ const socials = [
 
 export default function Example() {
 	return (
-		<div className="bg-gradient-to-tl from-pink-200 to-yellow-200"> {/* Updated gradient background */}
+		<div className="bg-gradient-to-tl from-black to-blue-800"> {/* Updated gradient to black and #1E40AF (blue-800) */}
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
