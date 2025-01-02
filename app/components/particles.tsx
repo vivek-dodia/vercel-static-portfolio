@@ -9,6 +9,7 @@ interface ParticlesProps {
 	staticity?: number;
 	ease?: number;
 	refresh?: boolean;
+	color?: string;
 }
 
 export default function Particles({
@@ -17,6 +18,7 @@ export default function Particles({
 	staticity = 50,
 	ease = 50,
 	refresh = false,
+	color = "#ffffff"
 }: ParticlesProps) {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
 	const canvasContainerRef = useRef<HTMLDivElement>(null);
@@ -98,9 +100,9 @@ export default function Particles({
 		const y = Math.floor(Math.random() * canvasSize.current.h);
 		const translateX = 0;
 		const translateY = 0;
-		const size = Math.floor(Math.random() * 3) + 1;
+		const size = Math.floor(Math.random() * 4) + 2;
 		const alpha = 0;
-		const targetAlpha = parseFloat((Math.random() * 0.9 + 0.4).toFixed(1));
+		const targetAlpha = parseFloat((Math.random() * 0.9 + 0.6).toFixed(1));
 		const dx = (Math.random() - 0.5) * 0.2;
 		const dy = (Math.random() - 0.5) * 0.2;
 		const magnetism = 0.1 + Math.random() * 4;
@@ -124,7 +126,7 @@ export default function Particles({
 			context.current.translate(translateX, translateY);
 			context.current.beginPath();
 			context.current.arc(x, y, size, 0, 2 * Math.PI);
-			context.current.fillStyle = `rgba(255, 255, 255, ${alpha * 1.5})`;
+			context.current.fillStyle = `rgba(255, 255, 255, ${alpha * 3.0})`;
 			context.current.fill();
 			context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
 
@@ -227,8 +229,18 @@ export default function Particles({
 	};
 
 	return (
-		<div className={className} ref={canvasContainerRef} aria-hidden="true">
-			<canvas ref={canvasRef} />
+		<div 
+			className={className} 
+			ref={canvasContainerRef} 
+			aria-hidden="true" 
+			style={{
+				position: 'absolute', 
+				width: '100%', 
+				height: '100%',
+				background: 'rgba(0,0,0,0.1)'
+			}}
+		>
+			<canvas ref={canvasRef} style={{display: 'block'}} />
 		</div>
 	);
 }
